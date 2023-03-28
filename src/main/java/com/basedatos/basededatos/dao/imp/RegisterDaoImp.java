@@ -18,7 +18,7 @@ public class RegisterDaoImp implements RegisterDao {
     @Transactional
     @Override
     public List<RegisterModel> getLAll(){
-        String hql = "FROM LoginModel as u";
+        String hql = "FROM RegisterModel as u";
         return (List<RegisterModel>) entityManager.createQuery(hql).getResultList();
     }
 
